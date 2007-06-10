@@ -1,7 +1,7 @@
-%define rel 5
+%define rel 1
 
 Name:           telepathy-butterfly
-Version:        0.1.2
+Version:        0.1.4
 Release:        %mkrel %rel
 Summary:        MSN connection manager for Telepathy
 
