@@ -1,6 +1,6 @@
 Name:           telepathy-butterfly
 Version:        0.3.2
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        MSN connection manager for Telepathy
 
 Group:          Networking/Instant messaging
