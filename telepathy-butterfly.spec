@@ -1,6 +1,6 @@
 Name:           telepathy-butterfly
 Version:        0.3.2
-Release:        %mkrel 2
+Release:        %mkrel 3
 Summary:        MSN connection manager for Telepathy
 
 Group:          Networking/Instant messaging
@@ -27,7 +27,7 @@ and conversations
 %files
 %defattr(-,root,root,-)
 %doc COPYING AUTHORS
-%{_prefix}/libexec/telepathy-butterfly
+%{_prefix}/lib/telepathy-butterfly
 %{_datadir}/dbus-1/services/*.service
 %{_datadir}/telepathy/managers/*.manager
 %{python_sitelib}/*
@@ -38,8 +38,8 @@ and conversations
 %setup -q
 
 %build
-./configure --prefix=%_prefix
-make
+./configure --prefix=%_prefix --libexecdir=%_prefix/lib
+%make
 
 %install
 rm -rf $RPM_BUILD_ROOT
