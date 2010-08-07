@@ -1,5 +1,5 @@
 Name:           telepathy-butterfly
-Version:        0.5.11
+Version:        0.5.12
 Release:        %mkrel 1
 Summary:        MSN connection manager for Telepathy
 
@@ -15,7 +15,7 @@ BuildRequires:  python-devel
 BuildRequires:	pkgconfig
 
 Requires:	python-telepathy
-Requires:	python-papyon
+Requires:	python-papyon >= 0.4.9
 Requires:	dbus
 Requires:	telepathy-filesystem
 Suggests:	python-libproxy
@@ -31,7 +31,7 @@ and conversations
 %{_prefix}/lib/telepathy-butterfly
 %{_datadir}/dbus-1/services/*.service
 %{_datadir}/telepathy/managers/*.manager
-%{python_sitelib}/*
+%{python_sitelib}/butterfly
 
 #--------------------------------------------------------------------
 
@@ -43,8 +43,8 @@ and conversations
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
