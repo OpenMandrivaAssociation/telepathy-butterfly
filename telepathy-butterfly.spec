@@ -5,7 +5,7 @@ Summary:        MSN connection manager for Telepathy
 
 Group:          Networking/Instant messaging
 License:        GPLv2+
-URL:            http://telepathy.freedesktop.org/wiki/
+URL:            https://telepathy.freedesktop.org/wiki/
 Source0:        http://telepathy.freedesktop.org/releases/%{name}/%{name}-%{version}.tar.gz
 
 BuildArch:      noarch
