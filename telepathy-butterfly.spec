@@ -9,6 +9,11 @@ URL:            https://telepathy.freedesktop.org/wiki/
 Source0:        http://telepathy.freedesktop.org/releases/%{name}/%{name}-%{version}.tar.gz
 
 BuildArch:      noarch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	dbus-devel
 BuildRequires:  python-devel
 BuildRequires:	pkgconfig
